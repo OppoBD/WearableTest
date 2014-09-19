@@ -32,9 +32,9 @@ public class version_2_0_0 extends ActivityInstrumentationTestCase2 {
 	}
 
 	public void testLogin() {
-		solo.clickOnText("Í¬Òâ");
+		solo.clickOnText("åŒæ„");
 		solo.sleep(5000);
-//		//Ïò×ó»¬¶¯3´Î
+//		//å‘å·¦æ»‘åŠ¨3æ¬¡
 		for(int i =0 ;i < 3; i++) {
 			solo.scrollToSide(22);
 			solo.sleep(1000);
@@ -51,20 +51,20 @@ public class version_2_0_0 extends ActivityInstrumentationTestCase2 {
 		int id = solo.getCurrentActivity().getResources().getIdentifier("login", "id", "com.baidu.wearable");
 		View v = solo.getView(id);
 		solo.clickOnView(v);
-		solo.waitForText("ÎÒ");
+		solo.waitForText("æˆ‘");
 //
-//		//Èç¹ûÓĞĞÂ°æ±¾£¬¾ÍÈ¡ÏûÏÂÔØ
-		solo.waitForText("ĞÂ°æ±¾");
-		if(solo.searchText("ĞÂ°æ±¾"))
-			solo.clickOnText("È¡Ïû");
+//		//å¦‚æœæœ‰æ–°ç‰ˆæœ¬ï¼Œå°±å–æ¶ˆä¸‹è½½
+		solo.waitForText("æ–°ç‰ˆæœ¬");
+		if(solo.searchText("æ–°ç‰ˆæœ¬"))
+			solo.clickOnText("å–æ¶ˆ");
 		solo.sleep(2000);
 		
 
-		if(solo.searchText("ÎÒ"))
-			solo.clickOnText("ÎÒ");		
+		if(solo.searchText("æˆ‘"))
+			solo.clickOnText("æˆ‘");		
 		// Verify that resultant of 10 x 20
 //		assertTrue(solo.searchText("liwei05test03"));
-		assertTrue(solo.searchText("²½Êı"));
+		assertTrue(solo.searchText("æ­¥æ•°"));
 		
 	}
 	
